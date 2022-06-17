@@ -1,26 +1,36 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <title>Hello World!</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"/>
-    <link rel="stylesheet" href="index.css" />
 
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+  <link rel="stylesheet" href="index.css" />
+
+</head>
+
+<body>
+  <div class="punteggi">
     <div class="split left">
       <div class="centered">
         <h2>Player 1</h2>
         <p id="score1">Loading...</p>
+        <h3>Frecce rimanenti</h3>
+        <p id="dartLeft1">Loading...</p>
       </div>
     </div>
-    
+
     <div class="split right">
       <div class="centered">
         <h2>Player 2</h2>
         <p id="score2">Loading...</p>
+        <h3>Frecce rimanenti</h3>
+        <p id="dartLeft2">Loading...</p>
       </div>
     </div>
-    <script type="module" src="index.js"></script>
-  </body>
+  </div>
+
+  <script type="module" src="index.js"></script>
+</body>
+
 </html>

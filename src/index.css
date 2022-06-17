@@ -43,3 +43,12 @@ body {
   width: 150px;
   border-radius: 50%;
 }
+
+.punteggi{
+  align-items: center;
+  position: fixed;
+  height: 50;
+  width: 50;
+  top: 50%;
+  width: 50%;
+}
