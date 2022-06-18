@@ -4,31 +4,43 @@
 <head>
   <meta charset="UTF-8" />
   <title>Hello World!</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
   <link rel="stylesheet" href="index.css" />
 
 </head>
 
 <body>
-  <div class="punteggi">
-    <div class="split left">
-      <div class="centered">
-        <h2>Player 1</h2>
-        <p id="score1">Loading...</p>
-        <h3>Frecce rimanenti</h3>
-        <p id="dartLeft1">Loading...</p>
-      </div>
-    </div>
-
-    <div class="split right">
-      <div class="centered">
-        <h2>Player 2</h2>
-        <p id="score2">Loading...</p>
-        <h3>Frecce rimanenti</h3>
-        <p id="dartLeft2">Loading...</p>
-      </div>
-    </div>
+  <div class="header">
+    <h2>Tazer Dart</h2>
   </div>
+    <div class="scores">
+     
+      <div class="card player1">
+        <div class="content-player">
+          <h3>Player 1</h3>
+          <img src="./assets/imgs/img_avatar.png" alt="Avatar" class="avatar"/>
+          <h3 >Score</h3>
+          <p id="score1"class="punteggio" >Loading...</p>
+          <div>
+            <div id="dartLeft1" class="remaining-dart"></div>
+          </div>
+          
+        </div>
+        
+      </div>
+      <div class="card player2">
+        <div class="content-player">
+          <h3>Player 2</h3>
+          <img src="./assets/imgs/img_avatar.png" alt="Avatar" class="avatar"/>
+          <h3 >Score</h3>
+          <h3 id="score2" class="punteggio">Loading...</h3>
+          <div>
+            <div id="dartLeft2" class="remaining-dart"></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
 
   <script type="module" src="index.js"></script>
 </body>
