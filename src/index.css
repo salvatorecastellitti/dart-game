@@ -11,6 +11,28 @@ body{
   background-color: white;
 }
 
+.dartPoint{
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 80px;
+  position: absolute;
+  text-align: center;
+  background-color: white;
+  transform: translate(-50%, -50%);
+}
+
+.pointContainer{
+  top: 0px;
+  margin-top: 0px;
+}
+
+.puteggioFreccia{
+  font-weight: normal;
+  
+}
+
 .card{
   position: fixed;
   width: 50%;
@@ -65,3 +87,4 @@ body{
   90% { transform: translate(1px, 2px) rotate(0deg); }
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
+

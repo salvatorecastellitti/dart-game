@@ -1,8 +1,9 @@
 import { points } from './handlePoint/points.js';
 const electron = require('electron')
 const path = require('path')
-var punteggio1 = 301
-var punteggio2 = 301
+
+var punteggio1 = 111
+var punteggio2 = 501
 var turnoPlayer = true
 var contaFrecce1 = 0
 var contaFrecce2 = 0
@@ -14,6 +15,7 @@ let socket = new WebSocket("ws://localhost:8081");
 //definiamo le variabili id che saranno presenti nell'html
 var score1 = document.getElementById('score1')
 var score2 = document.getElementById('score2')
+var pointDart = document.getElementById('pointDart')
 
 score1.innerHTML = punteggio1
 score2.innerHTML = punteggio2
@@ -23,7 +25,7 @@ socket.onmessage = showData;
 for(var i=3;i>contaFrecce1;i--){     
     dartLeft1.innerHTML += `<img src="./assets/imgs/darts-svgrepo-com.svg"/>`
 }
-//dartLeft.innerHTML += `<img src="./assets/imgs/darts-svgrepo-com.svg"/>` + `<img src="./assets/imgs/darts-svgrepo-com.svg"/>`
+
 //gestisce il messaggio
 function showData(result) {
     // result is a JSON string. Parse it:
@@ -39,6 +41,7 @@ function showData(result) {
 function calcoloPunteggio(placeHolderFreccia) {
 
     let puntoFreccia = points[placeHolderFreccia]
+    pointDart.innerHTML = puntoFreccia
     if (turnoPlayer == true) {
         if (puntoFreccia > punteggio1) {
             turnoPlayer = !turnoPlayer
@@ -85,9 +88,6 @@ function showLeftDart(){
             dartLeft2.innerHTML += `<img src="./assets/imgs/darts-svgrepo-com.svg"/>`
         }
     }
-    
-
-    
 }
 
 
