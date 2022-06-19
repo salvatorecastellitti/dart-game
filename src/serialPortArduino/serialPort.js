@@ -2,7 +2,7 @@
 var SerialPort = require('serialport'); // include the serialport library
 var WebSocketServer = require('ws').Server;
 
-var portName =  '/dev/tty.usbmodem1401'; // get the port name from the command line
+var portName =  '/dev/tty.usbmodem11401'; // get the port name from the command line
 var myPort = new SerialPort(portName, 9600);// open the port
 
 const SERVER_PORT = 8081;
