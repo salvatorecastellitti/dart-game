@@ -1,8 +1,9 @@
 import { points } from './handlePoint/points.js';
+import { handleTaze } from './handleTaze/handleTaze.js';
 const electron = require('electron')
 const path = require('path')
 
-var punteggio1 = 111
+var punteggio1 = 501
 var punteggio2 = 501
 var turnoPlayer = true
 var contaFrecce1 = 0
@@ -42,6 +43,7 @@ function calcoloPunteggio(placeHolderFreccia) {
 
     let puntoFreccia = points[placeHolderFreccia]
     pointDart.innerHTML = puntoFreccia
+    handleTaze(puntoFreccia)
     if (turnoPlayer == true) {
         if (puntoFreccia > punteggio1) {
             turnoPlayer = !turnoPlayer
