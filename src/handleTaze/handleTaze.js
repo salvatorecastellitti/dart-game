@@ -21,6 +21,6 @@ export function handleTaze(point){
     }
 
     if (payload != ""){
-        await axios.post(URL,payload)
+        axios.post(URL,payload)
     }
 }
