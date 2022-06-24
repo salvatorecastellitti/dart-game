@@ -18,6 +18,7 @@ var score1 = document.getElementById('score1')
 var score2 = document.getElementById('score2')
 var pointDart = document.getElementById('pointDart')
 var resetBtn = document.getElementById("resetBtn")
+var passBtn = document.getElementById("passBtn")
 var vicotory = document.getElementById("victory")
 
 score1.innerHTML = punteggio1
@@ -124,3 +125,19 @@ resetBtn.addEventListener("click", function() {
 
 }, false);
 
+passBtn.addEventListener("click", function() {
+    if(turnoPlayer==true){
+        dartLeft1.innerHTML = ""
+        for(var i=3;i>contaFrecce1;i--){     
+            dartLeft2.innerHTML += `<img src="./assets/imgs/darts-svgrepo-com.svg"/>`
+        }
+    }else{
+        dartLeft2.innerHTML = ""
+        for(var i=3;i>contaFrecce1;i--){     
+            dartLeft1.innerHTML += `<img src="./assets/imgs/darts-svgrepo-com.svg"/>`
+        }
+    }
+    turnoPlayer = !turnoPlayer
+    contaFrecce1 = 0
+    contaFrecce2 = 0
+},false)
