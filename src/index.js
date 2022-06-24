@@ -3,8 +3,8 @@ import { handleTaze } from './handleTaze/handleTaze.js';
 const electron = require('electron')
 const path = require('path')
 
-var punteggio1 = 501
-var punteggio2 = 501
+var punteggio1 = 301
+var punteggio2 = 301
 var turnoPlayer = true
 var contaFrecce1 = 0
 var contaFrecce2 = 0
@@ -128,7 +128,7 @@ resetBtn.addEventListener("click", function() {
 passBtn.addEventListener("click", function() {
     if(turnoPlayer==true){
         dartLeft1.innerHTML = ""
-        for(var i=3;i>contaFrecce1;i--){     
+        for(var i=3;i>contaFrecce2;i--){     
             dartLeft2.innerHTML += `<img src="./assets/imgs/darts-svgrepo-com.svg"/>`
         }
     }else{
