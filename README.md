@@ -4,7 +4,7 @@
 
 Ciao a tutti.
 
-Qui potete trovare il progetto dell'App Dart game, usata nel video: per gestire il punteggio e mandare la scossa.
+Qui potete trovare il progetto dell'App Dart game, usata nel [video](https://www.youtube.com/watch?v=CJB2qVds0R0) per gestire il punteggio e mandare la scossa.
 
 Utilizzo:
 1. Clonare il progetto
