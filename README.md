@@ -1,6 +1,8 @@
 # dart-tazer-game
 
-<img src="/src/assets/imgs/dartboard.svg" width="300" height="300">
+<img src="/src/assets/imgs/darts-svgrepo-com.svg" width="200" height="200">
+<img src="/src/assets/imgs/dartboard.svg" width="200" height="200">
+<img src="/src/assets/imgs/darts-svgrepo-com.svg" width="200" height="200">
 
 Ciao a tutti.
 
