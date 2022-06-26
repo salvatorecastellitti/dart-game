@@ -1,4 +1,4 @@
-# dart-game
+# dart-tazer-game
 
 <img src="/src/assets/imgs/dartboard.svg" width="300" height="300">
 
