@@ -1,6 +1,7 @@
 # dart-game
 
 ![Dart Game](/src/assets/imgs/dartboard.svg | width=100)
+<img src="/src/assets/imgs/dartboard.svg" width="100" height="100">
 Ciao a tutti.
 
 Qui potete trovare il progetto dell'App Dart game, usata nel video: per gestire il punteggio e mandare la scossa.
