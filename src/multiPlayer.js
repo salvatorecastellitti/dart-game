@@ -3,8 +3,8 @@ import { handleTaze } from './handleTaze/handleTaze.js';
 const electron = require('electron')
 const path = require('path')
 
-var punteggio1 = 301
-var punteggio2 = 301
+var punteggio1 = 501
+var punteggio2 = 501
 var turnoPlayer = true
 var contaFrecce1 = 0
 var contaFrecce2 = 0

@@ -1,8 +1,11 @@
 const axios = require('axios')
 
 URL = 'http://192.168.1.150/player1'
+//URL2 in caso ci siano piu esp32 (più giocatori)
 
 export function handleTaze(point){
+    //if (turnoPlayer == true)
+    //in questo modo anciamo a gestire a chi mandare la scossa
     let payload = ""
     console.log(point)
     switch(point){
