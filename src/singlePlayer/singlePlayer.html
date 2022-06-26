@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Single Player!</title>
+        <link rel="stylesheet" href="singlePlayer.css" />
+        <script type="module" src="singlePlayer.js"></script>
+      </head>
+    
+<body>
+    <div class="header">
+      <h3>Tazer Dart</h3>
+    </div>
+    <div class="dartPoint">
+      <h2 style="margin-bottom: 0%; margin-top: 10px;">Point</h2>
+      <div class="pointContainer">
+        <h3 id="pointDart" class="puteggioFreccia"></h3>
+      </div>
+    </div>
+    <div class="victory" id="victory">
+    </div>
+      <div class="scores">
+        <div class="card player1">
+          <div class="content-player">
+            <h3>Player 1</h3>
+            <img src="../assets/imgs/img_avatar.png" alt="Avatar" class="avatar"/>
+            <h3 >Score</h3>
+            <p id="score1"class="punteggio" >Loading...</p>
+            <div>
+              <div id="dartLeft1" class="remaining-dart"></div>
+            </div>
+            
+          </div>
+          
+        </div>
+      </div>
+  
+      <div class="footer">
+        <div>
+          <button class="passBtn" id="passBtn">Pass Turn</button>
+          <br/>
+          <button id="resetBtn">Reset</button>
+          <input type="button" onclick="location.href='../../index.html';" value="Main menu" />
+        </div>
+      </div>
+  
+  </body>
+</html>

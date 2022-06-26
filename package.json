@@ -3,7 +3,7 @@
   "productName": "dart-game",
   "version": "1.0.0",
   "description": "My Electron application description",
-  "main": "src/index.js",
+  "main": "main.js",
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
@@ -45,6 +45,7 @@
     }
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "electron-squirrel-startup": "^1.0.0",
     "serialport": "^9.0.0",
     "ws": "^7.3.1"
